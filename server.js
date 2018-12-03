@@ -36,6 +36,12 @@ app.get('/about', (req,res) => {
   });
 });
 
+app.get('/projects', (req,res) => {
+  res.render('about.hbs', {
+    pageTitle: 'Projects page.'
+  });
+});
+
 app.get('/json', (req,res) => {
   res.send({
     name: 'Viacheslav',
